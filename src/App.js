@@ -1,6 +1,7 @@
 import { useState } from "react";
 // Pages
 import Home from "./pages/Home";
+import Finished from "./pages/Finished";
 
 function App() {
   const [username, setUsername] = useState("");
@@ -9,7 +10,14 @@ function App() {
 
   return (
     <div className="App">
-      <h1>App</h1>
+      <Home
+        username={username}
+        setUsername={setUsername}
+        score={score}
+        setScore={setScore}
+        previousScore={previousScore}
+      />
+      <Finished score={score} setPreviousScore={setPreviousScore} />
     </div>
   );
 }
