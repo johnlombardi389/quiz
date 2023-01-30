@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 function App() {
   const [username, setUsername] = useState("");
   const [score, setScore] = useState(0);
+  const [previousScore, setPreviousScore] = useState(0);
 
   return (
     <div className="App">
