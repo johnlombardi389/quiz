@@ -1,7 +1,13 @@
+import { useState } from "react";
+// Components
+import GetUsername from "../components/GetUsername";
+
 const Home = () => {
+  const [quizStatus, setQuizStatus] = useState(false);
+
   return (
     <div>
-      <h1>Hello</h1>
+      <GetUsername />
     </div>
   );
 };
