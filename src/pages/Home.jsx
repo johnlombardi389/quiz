@@ -9,12 +9,19 @@ import { motion } from "framer-motion";
 const Home = ({ username, setUsername, score, setScore, previousScore }) => {
   const [quizStatus, setQuizStatus] = useState(false);
 
+  console.log(username);
+
   return (
     <StyledHome>
       {quizStatus ? (
-        <Quiz />
+        <Quiz username={username} />
       ) : (
-        <GetUsername quizStatus={quizStatus} setQuizStatus={setQuizStatus} />
+        <GetUsername
+          quizStatus={quizStatus}
+          setQuizStatus={setQuizStatus}
+          username={username}
+          setUsername={setUsername}
+        />
       )}
     </StyledHome>
   );
