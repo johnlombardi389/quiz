@@ -1,6 +1,7 @@
 export const questions = [
   // Question 1
   {
+    id: 1,
     ask: "What is the name of the largest ocean in the world?",
     options: [
       {
@@ -23,6 +24,7 @@ export const questions = [
   },
   // Question 2
   {
+    id: 2,
     ask: "How many countries are there in the United Kingdom?",
     options: [
       {
@@ -45,6 +47,7 @@ export const questions = [
   },
   // Question 3
   {
+    id: 3,
     ask: "Where are the Spanish Steps located?",
     options: [
       {
@@ -67,6 +70,7 @@ export const questions = [
   },
   // Question 4
   {
+    id: 4,
     ask: "Which U.S. state is known as The Garden State?",
     options: [
       {
@@ -89,6 +93,7 @@ export const questions = [
   },
   // Question 5
   {
+    id: 5,
     ask: "What is the capital city of South Korea?",
     options: [
       {
@@ -111,6 +116,7 @@ export const questions = [
   },
   // Question 6
   {
+    id: 6,
     ask: "By area, what is the smallest country in the world?",
     options: [
       {
@@ -133,6 +139,7 @@ export const questions = [
   },
   // Question 7
   {
+    id: 7,
     ask: "Which country has the longest coastline in the world?",
     options: [
       {
@@ -155,6 +162,7 @@ export const questions = [
   },
   // Question 8
   {
+    id: 8,
     ask: "Which country is Mt. Fuji located in?",
     options: [
       {
@@ -177,6 +185,7 @@ export const questions = [
   },
   // Question 9
   {
+    id: 9,
     ask: "What is the name of the world’s largest island?",
     options: [
       {
@@ -199,6 +208,7 @@ export const questions = [
   },
   // Question 10
   {
+    id: 10,
     ask: "How many time zones does Russia have?",
     options: [
       {

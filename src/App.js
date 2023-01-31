@@ -19,6 +19,7 @@ function App() {
         score={score}
         setScore={setScore}
         previousScore={previousScore}
+        setPreviousScore={setPreviousScore}
       />
       <Finished score={score} setPreviousScore={setPreviousScore} />
     </div>
