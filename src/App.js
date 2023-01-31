@@ -2,6 +2,8 @@ import { useState } from "react";
 // Pages
 import Home from "./pages/Home";
 import Finished from "./pages/Finished";
+// Style
+import GlobalStyles from "./components/GlobalStyle";
 
 function App() {
   const [username, setUsername] = useState("");
@@ -10,6 +12,7 @@ function App() {
 
   return (
     <div className="App">
+      <GlobalStyles />
       <Home
         username={username}
         setUsername={setUsername}
