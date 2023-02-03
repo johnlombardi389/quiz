@@ -39,8 +39,8 @@ const Home = () => {
       <QuizGame>
         <Scoreboard time={time} />
         {/* <Timer time={time} /> */}
-        <button onClick={handleStart}>Start Timer</button>
-        <button onClick={handleStop}>Stop Timer</button>
+        {/* <button onClick={handleStart}>Start Timer</button>
+        <button onClick={handleStop}>Stop Timer</button> */}
       </QuizGame>
     </StyledHome>
   );
