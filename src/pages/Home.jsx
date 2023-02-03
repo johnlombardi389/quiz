@@ -36,16 +36,27 @@ const Home = () => {
 
   return (
     <StyledHome>
-      <Scoreboard />
-      <Timer time={time} />
-      <button onClick={handleStart}>Start Timer</button>
-      <button onClick={handleStop}>Stop Timer</button>
+      <QuizGame>
+        <Scoreboard />
+        <Timer time={time} />
+        <button onClick={handleStart}>Start Timer</button>
+        <button onClick={handleStop}>Stop Timer</button>
+      </QuizGame>
     </StyledHome>
   );
 };
 
 const StyledHome = styled(motion.div)`
   height: 100vh;
+  display: grid;
+  place-items: center;
+`;
+
+const QuizGame = styled(motion.div)`
+  position: absolute;
+  width: 700px;
+  height: 900px;
+  background: linear-gradient(148.83deg, #4da58b 0%, #004349 100%);
 `;
 
 export default Home;
