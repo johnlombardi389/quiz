@@ -17,6 +17,10 @@ const Question = ({ questionIndex, setQuestionIndex }) => {
     setQuestionIndex((prevIndex) => prevIndex + 1);
   };
 
+  if (questionIndex >= questions.length) {
+    return <h3>All questions have been answered!</h3>;
+  }
+
   return (
     <StyledSection>
       <h3>{questions[questionIndex].ask}</h3>

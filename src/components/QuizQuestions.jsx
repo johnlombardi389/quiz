@@ -8,7 +8,6 @@ const QuizQuestions = () => {
 
   return (
     <div>
-      <h1>Questions</h1>
       <Question
         questionIndex={questionIndex}
         setQuestionIndex={setQuestionIndex}

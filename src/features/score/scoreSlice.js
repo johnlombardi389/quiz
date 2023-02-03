@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   score: 0,
+  gameOver: false,
 };
 
 export const scoreSlice = createSlice({
@@ -14,9 +15,12 @@ export const scoreSlice = createSlice({
     reset: (state) => {
       state.score = 0;
     },
+    endGame: (state) => {
+      state.gameOver = true;
+    },
   },
 });
 
-export const { increment, reset } = scoreSlice.actions;
+export const { increment, reset, endGame } = scoreSlice.actions;
 
 export default scoreSlice.reducer;

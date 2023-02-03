@@ -1,14 +1,19 @@
 import { useEffect, useState } from "react";
+// Redux
+import { useSelector, useDispatch } from "react-redux";
+import { reset, endGame } from "../features/score/scoreSlice";
 // Style
 import styled from "styled-components";
 import { motion } from "framer-motion";
 // Components
 import Scoreboard from "../features/score/Scoreboard";
-import Timer from "../features/score/Timer";
 import Introduction from "../components/Introduction";
 import QuizQuestions from "../components/QuizQuestions";
 
 const Home = () => {
+  const gameOver = useSelector((state) => state.score.gameOver);
+  const dispatch = useDispatch();
+
   const [time, setTime] = useState(0);
   const [isRunning, setIsRunning] = useState(false);
 
@@ -22,6 +27,7 @@ const Home = () => {
         clearInterval(intervalId);
         setIsRunning(false);
         setTime(0);
+        dispatch(endGame());
       }
     }
     return () => clearInterval(intervalId);
@@ -40,7 +46,6 @@ const Home = () => {
     <StyledHome>
       <QuizGame>
         <Scoreboard time={time} />
-        {/* <Timer time={time} /> */}
         {/* <button onClick={handleStart}>Start Timer</button>
         <button onClick={handleStop}>Stop Timer</button> */}
         {isRunning ? (
