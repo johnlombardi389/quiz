@@ -4,7 +4,6 @@ import supabase from "../../config/supabaseClient";
 const Leaderboard = () => {
   const [fetchError, setFetchError] = useState(null);
   const [leaderboard, setLeaderboard] = useState(null);
-  const [orderBY, setOrderBy] = useState("score");
 
   useEffect(() => {
     const fetchLeaderboard = async () => {
@@ -32,7 +31,7 @@ const Leaderboard = () => {
             {leaderboard
               .sort((a, b) => b.score - a.score)
               .map((leader) => (
-                <p>
+                <p key={leader.id}>
                   {leader.name} got {leader.score}
                 </p>
               ))}
