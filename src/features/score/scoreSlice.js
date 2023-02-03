@@ -16,3 +16,7 @@ export const counterSlice = createSlice({
     },
   },
 });
+
+export const { increment, reset } = scoreSlice.actions;
+
+export default scoreSlice.reducer;
