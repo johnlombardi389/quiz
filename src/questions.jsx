@@ -7,18 +7,22 @@ export const questions = [
       {
         answer: "Arctic",
         isCorrect: false,
+        slot: 1,
       },
       {
         answer: "Pacific",
         isCorrect: true,
+        slot: 2,
       },
       {
         answer: "Atlantic",
         isCorrect: false,
+        slot: 3,
       },
       {
         answer: "Indian",
         isCorrect: false,
+        slot: 4,
       },
     ],
   },
@@ -30,18 +34,22 @@ export const questions = [
       {
         answer: "2",
         isCorrect: false,
+        slot: 1,
       },
       {
         answer: "3",
         isCorrect: false,
+        slot: 2,
       },
       {
         answer: "4",
         isCorrect: true,
+        slot: 3,
       },
       {
         answer: "5",
         isCorrect: false,
+        slot: 4,
       },
     ],
   },
@@ -53,18 +61,22 @@ export const questions = [
       {
         answer: "Guadalajara, Mexico",
         isCorrect: false,
+        slot: 1,
       },
       {
         answer: "Barcelona, Spain",
         isCorrect: false,
+        slot: 2,
       },
       {
         answer: "Buenos Aires, Argentina",
         isCorrect: false,
+        slot: 3,
       },
       {
         answer: "Rome, Italy",
         isCorrect: true,
+        slot: 4,
       },
     ],
   },
@@ -76,18 +88,22 @@ export const questions = [
       {
         answer: "New Jersey",
         isCorrect: true,
+        slot: 1,
       },
       {
         answer: "Florida",
         isCorrect: false,
+        slot: 2,
       },
       {
         answer: "Iowa",
         isCorrect: false,
+        slot: 3,
       },
       {
         answer: "Texas",
         isCorrect: false,
+        slot: 4,
       },
     ],
   },
@@ -99,18 +115,22 @@ export const questions = [
       {
         answer: "Busan",
         isCorrect: false,
+        slot: 1,
       },
       {
         answer: "Incheon",
         isCorrect: false,
+        slot: 2,
       },
       {
         answer: "Seoul",
         isCorrect: true,
+        slot: 3,
       },
       {
         answer: "Daejeon",
         isCorrect: false,
+        slot: 4,
       },
     ],
   },
@@ -122,18 +142,22 @@ export const questions = [
       {
         answer: "Gibraltar",
         isCorrect: false,
+        slot: 1,
       },
       {
         answer: "San Marino",
         isCorrect: false,
+        slot: 2,
       },
       {
         answer: "Liechtenstein",
         isCorrect: false,
+        slot: 3,
       },
       {
         answer: "Vatican City",
         isCorrect: true,
+        slot: 4,
       },
     ],
   },
@@ -145,18 +169,22 @@ export const questions = [
       {
         answer: "Australia",
         isCorrect: false,
+        slot: 1,
       },
       {
         answer: "Brazil",
         isCorrect: false,
+        slot: 2,
       },
       {
         answer: "Canada",
         isCorrect: true,
+        slot: 3,
       },
       {
         answer: "Africa",
         isCorrect: false,
+        slot: 4,
       },
     ],
   },
@@ -168,18 +196,22 @@ export const questions = [
       {
         answer: "Nepal",
         isCorrect: false,
+        slot: 1,
       },
       {
         answer: "Indonesia",
         isCorrect: false,
+        slot: 2,
       },
       {
         answer: "Cambodia",
         isCorrect: false,
+        slot: 3,
       },
       {
         answer: "Japan",
         isCorrect: true,
+        slot: 4,
       },
     ],
   },
@@ -191,18 +223,22 @@ export const questions = [
       {
         answer: "Greenland",
         isCorrect: true,
+        slot: 1,
       },
       {
         answer: "New Guinea",
         isCorrect: false,
+        slot: 2,
       },
       {
         answer: "Borneo",
         isCorrect: false,
+        slot: 3,
       },
       {
         answer: "Madagascar",
         isCorrect: false,
+        slot: 4,
       },
     ],
   },
@@ -214,18 +250,22 @@ export const questions = [
       {
         answer: "3",
         isCorrect: false,
+        slot: 1,
       },
       {
         answer: "7",
         isCorrect: false,
+        slot: 2,
       },
       {
         answer: "11",
         isCorrect: true,
+        slot: 3,
       },
       {
         answer: "14",
         isCorrect: false,
+        slot: 4,
       },
     ],
   },
