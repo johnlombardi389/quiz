@@ -1,7 +1,7 @@
 // Style
 import styled from "styled-components";
 import { motion } from "framer-motion";
-
+import supabase from "../config/supabaseClient";
 // Components
 import Scoreboard from "../features/score/Scoreboard";
 
@@ -14,8 +14,6 @@ const Home = () => {
 };
 
 const StyledHome = styled(motion.div)`
-  display: grid;
-  place-items: center;
   height: 100vh;
 `;
 
