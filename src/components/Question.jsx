@@ -18,17 +18,52 @@ const Question = ({ questionIndex, setQuestionIndex }) => {
   };
 
   return (
-    <div>
+    <StyledSection>
       <h3>{questions[questionIndex].ask}</h3>
-      <div className="answers">
+      <Answers>
         {questions[questionIndex].options.map((option) => (
-          <div key={option.slot} onClick={() => handleClick(option.isCorrect)}>
+          <Choices
+            key={option.slot}
+            onClick={() => handleClick(option.isCorrect)}
+          >
             <p>{option.answer}</p>
-          </div>
+          </Choices>
         ))}
-      </div>
-    </div>
+      </Answers>
+    </StyledSection>
   );
 };
+
+const StyledSection = styled(motion.section)`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  padding: 2rem;
+  margin-top: 5rem;
+`;
+
+const Answers = styled(motion.div)`
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 2rem;
+`;
+
+const Choices = styled(motion.div)`
+  cursor: pointer;
+  background: #004349;
+  width: 250px;
+  height: 200px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.5rem;
+`;
 
 export default Question;
