@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import Scoreboard from "../features/score/Scoreboard";
 import Timer from "../features/score/Timer";
 import Introduction from "../components/Introduction";
+import QuizQuestions from "../components/QuizQuestions";
 
 const Home = () => {
   const [time, setTime] = useState(0);
@@ -42,8 +43,11 @@ const Home = () => {
         {/* <Timer time={time} /> */}
         {/* <button onClick={handleStart}>Start Timer</button>
         <button onClick={handleStop}>Stop Timer</button> */}
-        <Introduction handleStart={handleStart} />
-        {/* <StartButton /> */}
+        {isRunning ? (
+          <QuizQuestions />
+        ) : (
+          <Introduction handleStart={handleStart} />
+        )}
       </QuizGame>
     </StyledHome>
   );
